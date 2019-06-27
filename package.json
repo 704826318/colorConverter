@@ -1,8 +1,8 @@
 {
   "name": "colorconverter",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "一个执行颜色格式转换\u001b[D\u001b[D\u001b[D\u001b[之间转换的工具",
-  "main": "index.js",
+  "main": "./index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +11,7 @@
     "url": "git+ssh://git@github.com/704826318/colorConverter.git"
   },
   "keywords": [
-    "color;fomat;converter"
+    "color","converter","format"
   ],
   "author": "704826318@qq.com",
   "license": "MIT",
