@@ -1,4 +1,4 @@
-# ColorConverter
+# ColorConverter ![npm version](https://badge.fury.io/js/color-format-convert.svg)
 颜色格式转换工具
 
   ## Example
@@ -21,3 +21,8 @@
   colorConvert('#ffffffff') // rgba(255,255,255, 1)
 
   ```
+  ## Install
+
+  > npm install color-format-convert
+  
+  > yarn add color-format-convert
