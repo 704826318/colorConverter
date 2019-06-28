@@ -13,7 +13,7 @@ export function colorConvert (colorStr) {
 
   if (!colorStr) { return colorStr; }
 
-  const rgx = /^(#)([0-9A-Fa-f]{6,8})|^(rgb|rgba)\(([0-9]{1,3})\,\s*([0-9]{1,3})\,\s*([0-9]{1,3})\,?\s*([01]\.?\d*)?\)$/;
+  const rgx = /^(#)([0-9A-Fa-f]{6,8})|^(rgb|rgba)\(([0-9]{1,3})\,\s*([0-9]{1,3})\,\s*([0-9]{1,3})\,?\s*([01]?\.?\d*)?\)$/;
   const result = colorStr.match(rgx);
   if (!result) { return colorStr; }
 
