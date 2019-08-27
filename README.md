@@ -3,11 +3,11 @@ A color conversion tool, currently only supports HEX and RGB conversion
 
 颜色格式转换工具, 目前只支持HEX和RGB之间转换
 
-  ### Example
+  > Example
 
-  > RGB to HEX
+  - RGB and HEX transformation
  
-  > rgb和16进制位颜色转换
+  - rgb和16进制位颜色转换
   ```javascript
 
   colorConvert('#ffffff') // rgb(255,255,255)
@@ -16,9 +16,9 @@ A color conversion tool, currently only supports HEX and RGB conversion
 
   ```
 
-  > HEX to RGB
+  . HEX and RGB transformation
  
-  > rgba和16进制位转换
+  . rgba和16进制位转换
 
   ```javascript
 
@@ -27,8 +27,8 @@ A color conversion tool, currently only supports HEX and RGB conversion
   colorConvert('#ffffffff') // rgba(255,255,255, 1)
 
   ```
-  ### Install
+  > Install
 
-  > npm install color-format-convert
+  - `npm install color-format-convert`
   
-  > yarn add color-format-convert
+  - `yarn add color-format-convert`
