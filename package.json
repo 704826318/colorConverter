@@ -1,6 +1,6 @@
 {
   "name": "color-format-convert",
-  "version": "0.0.45",
+  "version": "0.0.46",
   "description": "一个执行颜色格式转换\u001b[D\u001b[D\u001b[D\u001b[之间转换的工具",
   "main": "./index",
   "scripts": {
