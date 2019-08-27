@@ -1,10 +1,12 @@
 # ColorConverter ![npm version](https://badge.fury.io/js/color-format-convert.svg)
 A color conversion tool, currently only supports HEX and RGB conversion
+
 颜色格式转换工具, 目前只支持HEX和RGB之间转换
 
   ### Example
 
   > RGB to HEX
+ 
   > rgb和16进制位颜色转换
   ```javascript
 
@@ -15,6 +17,7 @@ A color conversion tool, currently only supports HEX and RGB conversion
   ```
 
   > HEX to RGB
+ 
   > rgba和16进制位转换
 
   ```javascript
