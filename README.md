@@ -16,7 +16,7 @@ A color conversion tool, currently only supports HEX and RGB conversion
 
   ```
 
-  . HEX and RGB transformation
+  . HEX and RGBA transformation
  
   . rgba和16进制位转换
 
