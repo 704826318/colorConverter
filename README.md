@@ -5,6 +5,7 @@ A color conversion tool, currently only supports HEX and RGB conversion
 
   > Example
 
+  demo: https://donglinkai.github.io/colorConverter/
   - RGB and HEX transformation
  
   - rgb和16进制位颜色转换
