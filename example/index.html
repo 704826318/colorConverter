@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../index.js"></script>
+    <title>example</title>
+</head>
+<body>
+    <div id="root">
+        <input onchange="change(event)"/>
+        <br/>
+        orgin：{color}
+        <br />
+        target： {colorCover}
+    </div>
+    <script>
+        let data = {
+            color: '',
+            colorCover: '',
+        };
+        function change(event) {
+            data.color = event.target.value;
+            data.colorCover = colorConvert(event.target.value);
+        }
+    </script>
+</body>
+
+<script name="framework">
+
+
+    let cloneTemplate = '';
+
+    let root = document.body;
+
+    let renderTemplate = '';
+    
+    const cacheData = Object.assign({}, data);
+    
+    function Register(id) {
+        root = document.querySelector(id);
+        cloneTemplate = root.innerHTML;
+        let tmp = cloneTemplate;
+        for (const key of Object.keys(data)) {
+            tmp = tmp.replace(new RegExp(`\{${key}\}`, 'g'), data[key]);
+        }
+        root.innerHTML = tmp;
+    }
+
+    data = new Proxy(data, {
+        set(target, prop, value) {
+            cacheData[prop] = value;
+            let tmp = cloneTemplate;
+            for (const key of Object.keys(cacheData)) {
+                tmp = tmp.replace(new RegExp(`\{${key}\}`, 'g'), cacheData[key]);
+            }
+            renderTemplate = tmp;
+            root.innerHTML = renderTemplate;
+        }
+    })
+    Register('#root');
+</script>
+</html>

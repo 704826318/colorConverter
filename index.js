@@ -9,7 +9,7 @@
  *  xxxx.colorConvert('rgba(255,255,255,1)') // #ffffffff
  * ```
  */
-export function colorConvert (colorStr) {
+ function colorConvert (colorStr) {
 
   if (!colorStr) { return colorStr; }
 
@@ -36,6 +36,8 @@ export function colorConvert (colorStr) {
   }
 }
 
-export default {
-  colorConvert
-};
+if ('module' in window) {
+  module.exports = {
+    colorConvert
+  }
+}

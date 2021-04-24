@@ -4,19 +4,25 @@
   "description": "一个执行颜色格式转换\u001b[D\u001b[D\u001b[D\u001b[之间转换的工具",
   "main": "./index",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/704826318/colorConverter.git"
   },
   "keywords": [
-    "color","converter","format"
+    "color",
+    "converter",
+    "format"
   ],
   "author": "704826318@qq.com",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/704826318/colorConverter/issues"
   },
-  "homepage": "https://github.com/704826318/colorConverter#readme"
+  "homepage": "https://github.com/704826318/colorConverter#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.22",
+    "jest": "^26.6.3"
+  }
 }
